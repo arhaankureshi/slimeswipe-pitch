@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const SLIDE_IDS = [
   "top",
@@ -49,6 +49,40 @@ const LABELS: Record<string, string> = {
  */
 export default function FloatingNav() {
   const [currentIdx, setCurrentIdx] = useState(0);
+  const [visible, setVisible] = useState(true);
+  const hideTimer = useRef<number | null>(null);
+
+  // Auto-hide after 2.5s of no mouse / keyboard / touch activity
+  useEffect(() => {
+    const HIDE_AFTER_MS = 2500;
+
+    const wake = () => {
+      setVisible(true);
+      if (hideTimer.current !== null) {
+        window.clearTimeout(hideTimer.current);
+      }
+      hideTimer.current = window.setTimeout(() => {
+        setVisible(false);
+      }, HIDE_AFTER_MS);
+    };
+
+    wake(); // start the timer immediately
+
+    window.addEventListener("mousemove", wake, { passive: true });
+    window.addEventListener("keydown", wake);
+    window.addEventListener("touchstart", wake, { passive: true });
+    window.addEventListener("scroll", wake, { passive: true });
+
+    return () => {
+      window.removeEventListener("mousemove", wake);
+      window.removeEventListener("keydown", wake);
+      window.removeEventListener("touchstart", wake);
+      window.removeEventListener("scroll", wake);
+      if (hideTimer.current !== null) {
+        window.clearTimeout(hideTimer.current);
+      }
+    };
+  }, []);
 
   useEffect(() => {
     const findCurrent = () => {
@@ -91,8 +125,9 @@ export default function FloatingNav() {
 
   return (
     <div
-      className="pointer-events-none fixed inset-x-0 bottom-6 z-40 flex justify-center"
-      aria-hidden={false}
+      className="pointer-events-none fixed top-6 right-6 z-40 flex transition-opacity duration-500"
+      style={{ opacity: visible ? 1 : 0 }}
+      aria-hidden={!visible}
     >
       <div
         className="pointer-events-auto flex items-center gap-3 rounded-full px-3 py-2"
