@@ -16,7 +16,7 @@ import {
    ============================================================== */
 export function Slide1Title() {
   return (
-    <section id="top" className="relative min-h-screen w-full overflow-hidden">
+    <section id="top" className="relative h-screen w-full overflow-hidden">
       {/* layered ambient glows */}
       <div
         aria-hidden
@@ -39,7 +39,7 @@ export function Slide1Title() {
         <HeroScene />
       </div>
 
-      <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-[1280px] flex-col px-10 py-20 md:px-16">
+      <div className="relative z-10 mx-auto flex h-full w-full max-w-[1280px] flex-col px-10 py-12 md:px-16">
         <Reveal>
           <div className="flex items-center gap-4">
             <span
@@ -235,7 +235,7 @@ export function Slide2Problem() {
         <SlideHeader eyebrow="02 · THE PROBLEM" />
       </Reveal>
 
-      <div className="mt-20">
+      <div className="mt-8">
         <Reveal delay={1}>
           <SectionTitle>
             Dirt in your <span style={{ color: "var(--electric)" }}>vents</span>.
@@ -387,7 +387,7 @@ export function Slide3WhatWeDo() {
         <SlideHeader eyebrow="03 · WHAT WE DO" />
       </Reveal>
 
-      <div className="mt-20">
+      <div className="mt-8">
         <Reveal delay={1}>
           <p
             className="font-display leading-tight"
@@ -534,7 +534,7 @@ export function Slide4How() {
         <SlideHeader eyebrow="04 · HOW IT WORKS" />
       </Reveal>
 
-      <div className="mt-20">
+      <div className="mt-8">
         <Reveal delay={1}>
           <SectionTitle size="md">Three steps. Every corner clean.</SectionTitle>
         </Reveal>
@@ -675,7 +675,7 @@ export function Slide5Edge() {
         <SlideHeader eyebrow="05 · COMPETITIVE EDGE" />
       </Reveal>
 
-      <div className="mt-20">
+      <div className="mt-8">
         <Reveal delay={1}>
           <SectionTitle>
             We don&apos;t compete on price.
@@ -857,7 +857,7 @@ export function Slide6Insight() {
         <SlideHeader eyebrow="06 · CUSTOMER INSIGHT" />
       </Reveal>
 
-      <div className="mt-20">
+      <div className="mt-8">
         <Reveal delay={1}>
           <SectionTitle size="md">We didn&apos;t guess. We asked.</SectionTitle>
         </Reveal>

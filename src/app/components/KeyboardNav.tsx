@@ -78,6 +78,7 @@ export default function KeyboardNav() {
         e.key === "ArrowDown" ||
         e.key === "ArrowRight" ||
         e.key === "PageDown" ||
+        e.key === "Enter" ||
         (e.key === " " && !e.shiftKey)
       ) {
         e.preventDefault();
@@ -86,6 +87,7 @@ export default function KeyboardNav() {
         e.key === "ArrowUp" ||
         e.key === "ArrowLeft" ||
         e.key === "PageUp" ||
+        (e.key === "Enter" && e.shiftKey) ||
         (e.key === " " && e.shiftKey)
       ) {
         e.preventDefault();

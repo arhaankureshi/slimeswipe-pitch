@@ -50,9 +50,7 @@ export default function Home() {
         <SlideMarketing />
         <Slide11Giving />
         <Slide12Resilience />
-        <div id="ask">
-          <Slide14Ask />
-        </div>
+        <Slide14Ask />
       </main>
     </>
   );

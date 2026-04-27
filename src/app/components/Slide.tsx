@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import AutoFit from "./AutoFit";
 
 export function Slide({
   children,
@@ -16,7 +17,7 @@ export function Slide({
   return (
     <section
       id={id}
-      className={`relative min-h-screen w-full overflow-hidden ${className}`}
+      className={`relative h-screen w-full overflow-hidden ${className}`}
     >
       {variant !== "base" && (
         <>
@@ -49,9 +50,11 @@ export function Slide({
           )}
         </>
       )}
-      <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-[1280px] flex-col px-10 pt-20 pb-28 md:px-16">
-        {children}
-      </div>
+      <AutoFit className="relative z-10">
+        <div className="mx-auto flex w-full max-w-[1280px] flex-col px-10 pt-12 pb-12 md:px-16">
+          {children}
+        </div>
+      </AutoFit>
     </section>
   );
 }
@@ -91,7 +94,7 @@ export function SlideFooter({
   const pad = String(num).padStart(2, "0");
   const totalPad = String(total).padStart(2, "0");
   return (
-    <div className="mt-auto pt-12">
+    <div className="mt-auto pt-6">
       <div
         className="flex items-end justify-between"
         style={{ color: "var(--faint)" }}

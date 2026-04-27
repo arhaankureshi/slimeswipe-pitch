@@ -48,7 +48,7 @@ export function Slide8Traction() {
         <SlideHeader eyebrow="08 · TRACTION" />
       </Reveal>
 
-      <div className="mt-20">
+      <div className="mt-8">
         <Reveal delay={1}>
           <SectionTitle>
             Two months in market.
@@ -237,7 +237,7 @@ export function Slide11Giving() {
         <SlideHeader eyebrow="14 · THE CHARITY" />
       </Reveal>
 
-      <div className="mt-20">
+      <div className="mt-8">
         <Reveal delay={1}>
           <SectionTitle>Moving Mountains. Literally.</SectionTitle>
         </Reveal>
@@ -481,7 +481,7 @@ export function Slide12Resilience() {
         <SlideHeader eyebrow="15 · RESILIENCE" />
       </Reveal>
 
-      <div className="mt-20">
+      <div className="mt-8">
         <Reveal delay={1}>
           <SectionTitle>We didn&apos;t fix a website. We engineered a storefront.</SectionTitle>
         </Reveal>
@@ -626,7 +626,7 @@ export function Slide13Team() {
         <SlideHeader eyebrow="01 · THE TEAM" />
       </Reveal>
 
-      <div className="mt-20">
+      <div className="mt-8">
         <Reveal delay={1}>
           <SectionTitle size="md">
             Meet the team behind SlimeSwipe.
@@ -771,7 +771,7 @@ export function Slide14Ask() {
   ];
 
   return (
-    <section className="relative min-h-screen w-full overflow-hidden">
+    <section id="ask" className="relative h-screen w-full overflow-hidden">
       <div
         aria-hidden
         className="glow-purple"
@@ -788,7 +788,7 @@ export function Slide14Ask() {
         style={{ width: 460, height: 460, left: "40%", top: "22%", opacity: 0.9 }}
       />
 
-      <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-[1280px] flex-col px-10 py-20 md:px-16">
+      <div className="relative z-10 mx-auto flex h-full w-full max-w-[1280px] flex-col px-10 py-12 md:px-16">
         <Reveal>
           <SlideHeader eyebrow="16 · THE ASK" />
         </Reveal>

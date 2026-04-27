@@ -43,7 +43,7 @@ export function SlideTestimonials() {
         <SlideHeader eyebrow="07 · TESTIMONIALS" />
       </Reveal>
 
-      <div className="mt-20">
+      <div className="mt-8">
         <Reveal delay={1}>
           <SectionTitle>
             What our real customers
@@ -146,7 +146,7 @@ export function SlideSales() {
         <SlideHeader eyebrow="09 · SALES STRATEGY" />
       </Reveal>
 
-      <div className="mt-20">
+      <div className="mt-8">
         <Reveal delay={1}>
           <SectionTitle>
             Four ways to sell.
@@ -276,7 +276,7 @@ export function SlideSalesProof() {
         <SlideHeader eyebrow="10 · SALES" />
       </Reveal>
 
-      <div className="mt-20">
+      <div className="mt-8">
         <Reveal delay={1}>
           <SectionTitle>
             $0 to $2,000 — in <span style={{ color: "var(--electric)" }}>one week</span>.
@@ -409,7 +409,7 @@ export function SlideProjections() {
         <SlideHeader eyebrow="11 · PROJECTED SALES" />
       </Reveal>
 
-      <div className="mt-20">
+      <div className="mt-8">
         <Reveal delay={1}>
           <SectionTitle>
             <span style={{ color: "var(--electric)" }}>$21,000</span> — next 90 days.
@@ -535,7 +535,7 @@ export function SlideMarketing() {
         <SlideHeader eyebrow="13 · MARKETING" />
       </Reveal>
 
-      <div className="mt-20">
+      <div className="mt-8">
         <Reveal delay={1}>
           <SectionTitle>Two platforms. Two voices.</SectionTitle>
         </Reveal>
@@ -889,7 +889,7 @@ export function SlideNumbers() {
         <SlideHeader eyebrow="12 · THE NUMBERS" />
       </Reveal>
 
-      <div className="mt-20">
+      <div className="mt-8">
         <Reveal delay={1}>
           <SectionTitle size="md">
             $1.94 in. $13.99 out. Every jar.
