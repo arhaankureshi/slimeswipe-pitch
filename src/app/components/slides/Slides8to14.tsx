@@ -45,7 +45,7 @@ export function Slide8Traction() {
   return (
     <Slide id="traction" variant="glow-both">
       <Reveal>
-        <SlideHeader eyebrow="08 · TRACTION" />
+        <SlideHeader eyebrow="06 · TRACTION" />
       </Reveal>
 
       <div className="mt-8">
@@ -201,7 +201,7 @@ export function Slide8Traction() {
         </div>
       </Reveal>
 
-      <SlideFooter num={9} total={17} next="#sales" />
+      <SlideFooter num={7} total={17} next="#projected" />
     </Slide>
   );
 }
@@ -234,7 +234,7 @@ export function Slide11Giving() {
   return (
     <Slide id="giving" variant="glow-left">
       <Reveal>
-        <SlideHeader eyebrow="14 · THE CHARITY" />
+        <SlideHeader eyebrow="11 · THE CHARITY" />
       </Reveal>
 
       <div className="mt-8">
@@ -445,7 +445,7 @@ export function Slide11Giving() {
         </div>
       </div>
 
-      <SlideFooter num={15} total={17} next="#resilience" />
+      <SlideFooter num={12} total={17} next="#insight" />
     </Slide>
   );
 }
@@ -478,7 +478,7 @@ export function Slide12Resilience() {
   return (
     <Slide id="resilience" variant="glow-both">
       <Reveal>
-        <SlideHeader eyebrow="15 · RESILIENCE" />
+        <SlideHeader eyebrow="09 · RESILIENCE" />
       </Reveal>
 
       <div className="mt-8">
@@ -578,7 +578,7 @@ export function Slide12Resilience() {
         </div>
       </Reveal>
 
-      <SlideFooter num={16} total={17} next="#ask" />
+      <SlideFooter num={10} total={17} next="#marketing" />
     </Slide>
   );
 }

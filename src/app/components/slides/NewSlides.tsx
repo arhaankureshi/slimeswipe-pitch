@@ -40,7 +40,7 @@ export function SlideTestimonials() {
   return (
     <Slide id="testimonials" variant="glow-left">
       <Reveal>
-        <SlideHeader eyebrow="07 · TESTIMONIALS" />
+        <SlideHeader eyebrow="13 · TESTIMONIALS" />
       </Reveal>
 
       <div className="mt-8">
@@ -100,7 +100,7 @@ export function SlideTestimonials() {
         ))}
       </div>
 
-      <SlideFooter num={8} total={17} next="#traction" />
+      <SlideFooter num={14} total={17} next="#edge" />
     </Slide>
   );
 }
@@ -143,7 +143,7 @@ export function SlideSales() {
   return (
     <Slide id="sales" variant="glow-right">
       <Reveal>
-        <SlideHeader eyebrow="09 · SALES STRATEGY" />
+        <SlideHeader eyebrow="15 · SALES STRATEGY" />
       </Reveal>
 
       <div className="mt-8">
@@ -216,7 +216,7 @@ export function SlideSales() {
         </div>
       </Reveal>
 
-      <SlideFooter num={10} total={17} next="#wins" />
+      <SlideFooter num={16} total={17} next="#ask" />
     </Slide>
   );
 }
@@ -273,7 +273,7 @@ export function SlideSalesProof() {
   return (
     <Slide id="wins" variant="glow-left">
       <Reveal>
-        <SlideHeader eyebrow="10 · SALES" />
+        <SlideHeader eyebrow="05 · SALES" />
       </Reveal>
 
       <div className="mt-8">
@@ -346,7 +346,7 @@ export function SlideSalesProof() {
         </div>
       </Reveal>
 
-      <SlideFooter num={11} total={17} next="#projected" />
+      <SlideFooter num={6} total={17} next="#traction" />
     </Slide>
   );
 }
@@ -406,7 +406,7 @@ export function SlideProjections() {
   return (
     <Slide id="projected" variant="glow-both">
       <Reveal>
-        <SlideHeader eyebrow="11 · PROJECTED SALES" />
+        <SlideHeader eyebrow="07 · PROJECTED SALES" />
       </Reveal>
 
       <div className="mt-8">
@@ -520,7 +520,7 @@ export function SlideProjections() {
         </div>
       </Reveal>
 
-      <SlideFooter num={12} total={17} next="#numbers" />
+      <SlideFooter num={8} total={17} next="#numbers" />
     </Slide>
   );
 }
@@ -532,7 +532,7 @@ export function SlideMarketing() {
   return (
     <Slide id="marketing" variant="glow-both">
       <Reveal>
-        <SlideHeader eyebrow="13 · MARKETING" />
+        <SlideHeader eyebrow="10 · MARKETING" />
       </Reveal>
 
       <div className="mt-8">
@@ -838,7 +838,7 @@ export function SlideMarketing() {
         </div>
       </Reveal>
 
-      <SlideFooter num={14} total={17} next="#giving" />
+      <SlideFooter num={11} total={17} next="#giving" />
     </Slide>
   );
 }
@@ -886,7 +886,7 @@ export function SlideNumbers() {
   return (
     <Slide id="numbers" variant="base">
       <Reveal>
-        <SlideHeader eyebrow="12 · THE NUMBERS" />
+        <SlideHeader eyebrow="08 · THE NUMBERS" />
       </Reveal>
 
       <div className="mt-8">
@@ -1318,7 +1318,7 @@ export function SlideNumbers() {
         </div>
       </Reveal>
 
-      <SlideFooter num={13} total={17} next="#marketing" />
+      <SlideFooter num={9} total={17} next="#resilience" />
     </Slide>
   );
 }

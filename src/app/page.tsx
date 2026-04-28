@@ -34,22 +34,28 @@ export default function Home() {
       <KeyboardNav />
       <FloatingNav />
       <main className="relative z-10">
+        {/* Intro & Mission */}
         <Slide1Title />
         <Slide13Team />
         <Slide2Problem />
         <Slide3WhatWeDo />
         <Slide4How />
-        <Slide5Edge />
-        <Slide6Insight />
-        <SlideTestimonials />
-        <Slide8Traction />
-        <SlideSales />
+        {/* Sales & Finance */}
         <SlideSalesProof />
+        <Slide8Traction />
         <SlideProjections />
         <SlideNumbers />
+        {/* Tech & Resilience */}
+        <Slide12Resilience />
+        {/* Marketing & Social Responsibility */}
         <SlideMarketing />
         <Slide11Giving />
-        <Slide12Resilience />
+        {/* Supporting Proof */}
+        <Slide6Insight />
+        <SlideTestimonials />
+        <Slide5Edge />
+        {/* Close */}
+        <SlideSales />
         <Slide14Ask />
       </main>
     </>

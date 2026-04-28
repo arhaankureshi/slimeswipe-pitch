@@ -615,7 +615,7 @@ export function Slide4How() {
         </div>
       </Reveal>
 
-      <SlideFooter num={5} total={17} next="#edge" />
+      <SlideFooter num={5} total={17} next="#wins" />
     </Slide>
   );
 }
@@ -678,7 +678,7 @@ export function Slide5Edge() {
   return (
     <Slide id="edge" variant="glow-right">
       <Reveal>
-        <SlideHeader eyebrow="05 · COMPETITIVE EDGE" />
+        <SlideHeader eyebrow="14 · COMPETITIVE EDGE" />
       </Reveal>
 
       <div className="mt-8">
@@ -831,7 +831,7 @@ export function Slide5Edge() {
         </div>
       </Reveal>
 
-      <SlideFooter num={6} total={17} next="#insight" />
+      <SlideFooter num={15} total={17} next="#sales" />
     </Slide>
   );
 }
@@ -860,7 +860,7 @@ export function Slide6Insight() {
   return (
     <Slide id="insight" variant="glow-left">
       <Reveal>
-        <SlideHeader eyebrow="06 · CUSTOMER INSIGHT" />
+        <SlideHeader eyebrow="12 · CUSTOMER INSIGHT" />
       </Reveal>
 
       <div className="mt-8">
@@ -966,7 +966,7 @@ export function Slide6Insight() {
         </Reveal>
       </div>
 
-      <SlideFooter num={7} total={17} next="#testimonials" />
+      <SlideFooter num={13} total={17} next="#testimonials" />
     </Slide>
   );
 }
