@@ -463,14 +463,20 @@ export function Slide3WhatWeDo() {
                       filter: "blur(22px)",
                     }}
                   />
-                  {/* Jar photo — already transparent, just let it float */}
+                  {/* Jar photo — screen blend nukes the dark, multiply nukes white;
+                      the deck is dark, so multiply makes the white bg blend into
+                      the deck while the colored gel stays visible. */}
                   <div className="jar-float relative h-full w-full">
                     <Image
                       src={j.src}
                       alt={`${j.name} — ${j.scent}`}
                       fill
                       sizes="260px"
-                      className="object-contain drop-shadow-[0_30px_50px_rgba(0,0,0,0.6)]"
+                      className="object-contain"
+                      style={{
+                        mixBlendMode: "multiply",
+                        filter: "brightness(1.4) contrast(1.15)",
+                      }}
                       priority={i === 0}
                     />
                   </div>
