@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Reveal from "../Reveal";
 import {
   Slide,
@@ -794,20 +795,21 @@ export function SlideMarketing() {
               LOCAL RECOGNITION
             </div>
             <div
-              className="relative mt-4 h-32 w-full overflow-hidden"
+              className="relative mt-4 h-40 w-full overflow-hidden"
               style={{
                 background: "var(--violet-deep)",
                 border: "1px solid var(--violet)",
               }}
             >
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span
-                  className="text-[9px] font-bold"
-                  style={{ color: "var(--lilac)", letterSpacing: "0.3em" }}
-                >
-                  [ MAYOR PHOTO ]
-                </span>
-              </div>
+              <Image
+                src="/team/mayor.jpg"
+                alt="SlimeSwipe team with the Mayor of Fort McMurray at the booth"
+                fill
+                sizes="320px"
+                className="object-cover"
+                style={{ objectPosition: "center 30%" }}
+                unoptimized
+              />
             </div>
             <div className="mt-3 text-[12.5px] font-bold leading-snug text-white">
               Mayor of Fort McMurray dropped by our booth.
