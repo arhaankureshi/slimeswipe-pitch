@@ -347,6 +347,47 @@ export function SlideSalesProof() {
         </div>
       </Reveal>
 
+      {/* Summit GM proof photo */}
+      <Reveal delay={5}>
+        <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-[200px_1fr]">
+          <div
+            className="relative h-32 w-full overflow-hidden md:h-full"
+            style={{
+              background: "var(--violet-deep)",
+              border: "1px solid var(--violet)",
+            }}
+          >
+            <Image
+              src="/team/IMG_7870.jpg"
+              alt="SlimeSwipe team inside Summit GM dealership"
+              fill
+              sizes="200px"
+              className="object-cover"
+              style={{ objectPosition: "center 25%" }}
+              unoptimized
+            />
+          </div>
+          <div
+            className="flex items-center gap-4 px-4 py-3"
+            style={{
+              borderLeft: "3px solid var(--violet)",
+              background: "rgba(26, 15, 46, 0.5)",
+            }}
+          >
+            <span
+              className="text-[10px] font-bold"
+              style={{ color: "var(--violet)", letterSpacing: "0.3em" }}
+            >
+              INSIDE SUMMIT GM
+            </span>
+            <span className="text-[14px] italic text-white">
+              We walked the booth model into the dealership lobby — and walked out with our{" "}
+              <span className="font-bold not-italic">first B2B contract</span>.
+            </span>
+          </div>
+        </div>
+      </Reveal>
+
       <SlideFooter num={6} total={18} next="#traction" />
     </Slide>
   );
@@ -356,9 +397,30 @@ export function SlideSalesProof() {
    PRODUCTION (new · position 13 · eyebrow 12)
    ============================================================== */
 export function SlideProduction() {
-  const steps = [
-    { tag: "STEP 01", title: "Gel base mixed", desc: "Food-grade base prepped in small batches.", accent: "var(--electric)" },
-    { tag: "STEP 02", title: "Scent + jar fill", desc: "Signature scent compounds added, jars filled by hand.", accent: "var(--violet)" },
+  const steps: Array<{
+    tag: string;
+    title: string;
+    desc: string;
+    accent: string;
+    src?: string;
+    objectPosition?: string;
+  }> = [
+    {
+      tag: "STEP 01",
+      title: "Gel base mixed",
+      desc: "Food-grade base prepped in small batches.",
+      accent: "var(--electric)",
+      src: "/team/IMG_5700.JPG",
+      objectPosition: "center 40%",
+    },
+    {
+      tag: "STEP 02",
+      title: "Scent + jar fill",
+      desc: "Signature scent compounds added, jars filled by hand.",
+      accent: "var(--violet)",
+      src: "/team/IMG_5538.jpg",
+      objectPosition: "center 35%",
+    },
     { tag: "STEP 03", title: "Sealed + labeled", desc: "Quality-checked, sealed, and labeled before they ship.", accent: "var(--lilac)" },
   ];
 
@@ -398,17 +460,29 @@ export function SlideProduction() {
                 style={{ background: s.accent }}
               />
               <div
-                className="relative h-44 w-full"
+                className="relative h-44 w-full overflow-hidden"
                 style={{ background: "var(--violet-deep)" }}
               >
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span
-                    className="text-[9px] font-bold"
-                    style={{ color: s.accent, letterSpacing: "0.3em" }}
-                  >
-                    [ PHOTO ]
-                  </span>
-                </div>
+                {s.src ? (
+                  <Image
+                    src={s.src}
+                    alt={`SlimeSwipe production — ${s.title}`}
+                    fill
+                    sizes="400px"
+                    className="object-cover"
+                    style={{ objectPosition: s.objectPosition ?? "center" }}
+                    unoptimized
+                  />
+                ) : (
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <span
+                      className="text-[9px] font-bold"
+                      style={{ color: s.accent, letterSpacing: "0.3em" }}
+                    >
+                      [ PHOTO ]
+                    </span>
+                  </div>
+                )}
                 <div
                   aria-hidden
                   className="absolute inset-x-0 bottom-0 h-1/2"
