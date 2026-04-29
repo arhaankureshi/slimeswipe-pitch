@@ -418,7 +418,7 @@ export function SlideProduction() {
       title: "Scent + jar fill",
       desc: "Signature scent compounds added, jars filled by hand.",
       accent: "var(--violet)",
-      src: "/team/IMG_5538.jpg",
+      src: "/team/IMG_5538.jpeg",
       objectPosition: "center 35%",
     },
     {
@@ -426,7 +426,7 @@ export function SlideProduction() {
       title: "Sealed + labeled",
       desc: "Quality-checked, sealed, and labeled before they ship.",
       accent: "var(--lilac)",
-      src: "/team/IMG_7856.jpg",
+      src: "/team/IMG_7856.jpeg",
       objectPosition: "center 30%",
     },
   ];
