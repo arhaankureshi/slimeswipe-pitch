@@ -358,12 +358,12 @@ export function SlideSalesProof() {
             }}
           >
             <Image
-              src="/team/IMG_7856.jpeg"
-              alt="SlimeSwipe team member inspecting a sealed jar"
+              src="/team/IMG_7870.jpeg"
+              alt="SlimeSwipe team inside Summit GM dealership"
               fill
               sizes="200px"
               className="object-cover"
-              style={{ objectPosition: "center 30%" }}
+              style={{ objectPosition: "center 25%" }}
               unoptimized
             />
           </div>
@@ -378,10 +378,11 @@ export function SlideSalesProof() {
               className="text-[10px] font-bold"
               style={{ color: "var(--violet)", letterSpacing: "0.3em" }}
             >
-              FIRST B2B LOCKED
+              INSIDE SUMMIT GM
             </span>
             <span className="text-[14px] italic text-white">
-              Booth pivot → <span className="font-bold not-italic">Summit GM (160 units)</span> → NAPA pending. The hustle is paying off.
+              We walked the booth model into the dealership lobby — and walked out with our{" "}
+              <span className="font-bold not-italic">first B2B contract</span>.
             </span>
           </div>
         </div>
