@@ -347,6 +347,46 @@ export function SlideSalesProof() {
         </div>
       </Reveal>
 
+      {/* Sales proof photo */}
+      <Reveal delay={5}>
+        <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-[200px_1fr]">
+          <div
+            className="relative h-32 w-full overflow-hidden md:h-full"
+            style={{
+              background: "var(--violet-deep)",
+              border: "1px solid var(--violet)",
+            }}
+          >
+            <Image
+              src="/team/IMG_7856.jpeg"
+              alt="SlimeSwipe team member inspecting a sealed jar"
+              fill
+              sizes="200px"
+              className="object-cover"
+              style={{ objectPosition: "center 30%" }}
+              unoptimized
+            />
+          </div>
+          <div
+            className="flex items-center gap-4 px-4 py-3"
+            style={{
+              borderLeft: "3px solid var(--violet)",
+              background: "rgba(26, 15, 46, 0.5)",
+            }}
+          >
+            <span
+              className="text-[10px] font-bold"
+              style={{ color: "var(--violet)", letterSpacing: "0.3em" }}
+            >
+              FIRST B2B LOCKED
+            </span>
+            <span className="text-[14px] italic text-white">
+              Booth pivot → <span className="font-bold not-italic">Summit GM (160 units)</span> → NAPA pending. The hustle is paying off.
+            </span>
+          </div>
+        </div>
+      </Reveal>
+
       <SlideFooter num={6} total={18} next="#traction" />
     </Slide>
   );
