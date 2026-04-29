@@ -24,6 +24,7 @@ import {
   SlideProjections,
   SlideMarketing,
   SlideNumbers,
+  SlideProduction,
 } from "./components/slides/NewSlides";
 
 export default function Home() {
@@ -36,8 +37,8 @@ export default function Home() {
       <main className="relative z-10">
         {/* Intro & Mission */}
         <Slide1Title />
-        <Slide13Team />
         <Slide2Problem />
+        <Slide13Team />
         <Slide3WhatWeDo />
         <Slide4How />
         {/* Sales & Finance */}
@@ -50,6 +51,8 @@ export default function Home() {
         {/* Marketing & Social Responsibility */}
         <SlideMarketing />
         <Slide11Giving />
+        {/* Production */}
+        <SlideProduction />
         {/* Supporting Proof */}
         <Slide6Insight />
         <SlideTestimonials />

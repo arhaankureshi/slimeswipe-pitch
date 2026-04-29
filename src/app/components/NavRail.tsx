@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 
 const sections = [
   { id: "top", label: "01 · TITLE" },
-  { id: "team", label: "02 · THE TEAM" },
-  { id: "problem", label: "03 · PROBLEM" },
+  { id: "problem", label: "02 · PROBLEM" },
+  { id: "team", label: "03 · THE TEAM" },
   { id: "what", label: "04 · WHAT WE DO" },
   { id: "how", label: "05 · HOW IT WORKS" },
   { id: "wins", label: "06 · SALES" },
@@ -15,11 +15,12 @@ const sections = [
   { id: "resilience", label: "10 · RESILIENCE" },
   { id: "marketing", label: "11 · MARKETING" },
   { id: "giving", label: "12 · CHARITY" },
-  { id: "insight", label: "13 · INSIGHT" },
-  { id: "testimonials", label: "14 · TESTIMONIALS" },
-  { id: "edge", label: "15 · EDGE" },
-  { id: "sales", label: "16 · SALES STRATEGY" },
-  { id: "ask", label: "17 · THE ASK" },
+  { id: "production", label: "13 · PRODUCTION" },
+  { id: "insight", label: "14 · INSIGHT" },
+  { id: "testimonials", label: "15 · TESTIMONIALS" },
+  { id: "edge", label: "16 · EDGE" },
+  { id: "sales", label: "17 · SALES STRATEGY" },
+  { id: "ask", label: "18 · THE ASK" },
 ];
 
 export default function NavRail() {

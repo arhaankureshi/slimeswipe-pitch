@@ -201,7 +201,7 @@ export function Slide8Traction() {
         </div>
       </Reveal>
 
-      <SlideFooter num={7} total={17} next="#projected" />
+      <SlideFooter num={7} total={18} next="#projected" />
     </Slide>
   );
 }
@@ -445,7 +445,7 @@ export function Slide11Giving() {
         </div>
       </div>
 
-      <SlideFooter num={12} total={17} next="#insight" />
+      <SlideFooter num={12} total={18} next="#production" />
     </Slide>
   );
 }
@@ -578,7 +578,7 @@ export function Slide12Resilience() {
         </div>
       </Reveal>
 
-      <SlideFooter num={10} total={17} next="#marketing" />
+      <SlideFooter num={10} total={18} next="#marketing" />
     </Slide>
   );
 }
@@ -623,7 +623,7 @@ export function Slide13Team() {
   return (
     <Slide id="team" variant="base">
       <Reveal>
-        <SlideHeader eyebrow="01 · THE TEAM" />
+        <SlideHeader eyebrow="02 · THE TEAM" />
       </Reveal>
 
       <div className="mt-8">
@@ -743,7 +743,7 @@ export function Slide13Team() {
         ))}
       </div>
 
-      <SlideFooter num={2} total={17} next="#problem" />
+      <SlideFooter num={3} total={18} next="#what" />
     </Slide>
   );
 }
@@ -790,7 +790,7 @@ export function Slide14Ask() {
 
       <div className="relative z-10 mx-auto flex h-full w-full max-w-[1280px] flex-col px-10 py-12 md:px-16">
         <Reveal>
-          <SlideHeader eyebrow="16 · THE ASK" />
+          <SlideHeader eyebrow="17 · THE ASK" />
         </Reveal>
 
         <div className="mt-24 flex flex-1 flex-col justify-center">

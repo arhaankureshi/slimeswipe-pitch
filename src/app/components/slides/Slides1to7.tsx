@@ -232,7 +232,7 @@ export function Slide2Problem() {
   return (
     <Slide id="problem" variant="glow-left">
       <Reveal>
-        <SlideHeader eyebrow="02 · THE PROBLEM" />
+        <SlideHeader eyebrow="01 · THE PROBLEM" />
       </Reveal>
 
       <div className="mt-8">
@@ -348,7 +348,7 @@ export function Slide2Problem() {
         </div>
       </Reveal>
 
-      <SlideFooter num={3} total={17} next="#what" />
+      <SlideFooter num={2} total={18} next="#team" />
     </Slide>
   );
 }
@@ -504,7 +504,7 @@ export function Slide3WhatWeDo() {
         </div>
       </div>
 
-      <SlideFooter num={4} total={17} next="#how" />
+      <SlideFooter num={4} total={18} next="#how" />
     </Slide>
   );
 }
@@ -615,7 +615,7 @@ export function Slide4How() {
         </div>
       </Reveal>
 
-      <SlideFooter num={5} total={17} next="#wins" />
+      <SlideFooter num={5} total={18} next="#wins" />
     </Slide>
   );
 }
@@ -678,7 +678,7 @@ export function Slide5Edge() {
   return (
     <Slide id="edge" variant="glow-right">
       <Reveal>
-        <SlideHeader eyebrow="14 · COMPETITIVE EDGE" />
+        <SlideHeader eyebrow="15 · COMPETITIVE EDGE" />
       </Reveal>
 
       <div className="mt-8">
@@ -831,7 +831,7 @@ export function Slide5Edge() {
         </div>
       </Reveal>
 
-      <SlideFooter num={15} total={17} next="#sales" />
+      <SlideFooter num={16} total={18} next="#sales" />
     </Slide>
   );
 }
@@ -860,7 +860,7 @@ export function Slide6Insight() {
   return (
     <Slide id="insight" variant="glow-left">
       <Reveal>
-        <SlideHeader eyebrow="12 · CUSTOMER INSIGHT" />
+        <SlideHeader eyebrow="13 · CUSTOMER INSIGHT" />
       </Reveal>
 
       <div className="mt-8">
@@ -966,7 +966,7 @@ export function Slide6Insight() {
         </Reveal>
       </div>
 
-      <SlideFooter num={13} total={17} next="#testimonials" />
+      <SlideFooter num={14} total={18} next="#testimonials" />
     </Slide>
   );
 }

@@ -4,8 +4,8 @@ import { useEffect } from "react";
 
 const SLIDE_IDS = [
   "top",
-  "team",
   "problem",
+  "team",
   "what",
   "how",
   "wins",
@@ -15,6 +15,7 @@ const SLIDE_IDS = [
   "resilience",
   "marketing",
   "giving",
+  "production",
   "insight",
   "testimonials",
   "edge",

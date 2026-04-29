@@ -41,7 +41,7 @@ export function SlideTestimonials() {
   return (
     <Slide id="testimonials" variant="glow-left">
       <Reveal>
-        <SlideHeader eyebrow="13 · TESTIMONIALS" />
+        <SlideHeader eyebrow="14 · TESTIMONIALS" />
       </Reveal>
 
       <div className="mt-8">
@@ -101,7 +101,7 @@ export function SlideTestimonials() {
         ))}
       </div>
 
-      <SlideFooter num={14} total={17} next="#edge" />
+      <SlideFooter num={15} total={18} next="#edge" />
     </Slide>
   );
 }
@@ -144,7 +144,7 @@ export function SlideSales() {
   return (
     <Slide id="sales" variant="glow-right">
       <Reveal>
-        <SlideHeader eyebrow="15 · SALES STRATEGY" />
+        <SlideHeader eyebrow="16 · SALES STRATEGY" />
       </Reveal>
 
       <div className="mt-8">
@@ -217,7 +217,7 @@ export function SlideSales() {
         </div>
       </Reveal>
 
-      <SlideFooter num={16} total={17} next="#ask" />
+      <SlideFooter num={17} total={18} next="#ask" />
     </Slide>
   );
 }
@@ -347,13 +347,133 @@ export function SlideSalesProof() {
         </div>
       </Reveal>
 
-      <SlideFooter num={6} total={17} next="#traction" />
+      <SlideFooter num={6} total={18} next="#traction" />
     </Slide>
   );
 }
 
 /* ==============================================================
-   PROJECTED SALES (new · position 12 · eyebrow 11)
+   PRODUCTION (new · position 13 · eyebrow 12)
+   ============================================================== */
+export function SlideProduction() {
+  const steps = [
+    { tag: "STEP 01", title: "Gel base mixed", desc: "Food-grade base prepped in small batches.", accent: "var(--electric)" },
+    { tag: "STEP 02", title: "Scent + jar fill", desc: "Signature scent compounds added, jars filled by hand.", accent: "var(--violet)" },
+    { tag: "STEP 03", title: "Sealed + labeled", desc: "Quality-checked, sealed, and labeled before they ship.", accent: "var(--lilac)" },
+  ];
+
+  const stats = [
+    { stat: "100%", label: "MADE IN-HOUSE", accent: "var(--electric)" },
+    { stat: "FOOD-GRADE", label: "INGREDIENTS ONLY", accent: "var(--violet)" },
+    { stat: "FORT MAC", label: "LOCAL PRODUCTION", accent: "var(--lilac)" },
+  ];
+
+  return (
+    <Slide id="production" variant="glow-both">
+      <Reveal>
+        <SlideHeader eyebrow="12 · PRODUCTION" />
+      </Reveal>
+
+      <div className="mt-8">
+        <Reveal delay={1}>
+          <SectionTitle>
+            Mixed by us. Made in <span style={{ color: "var(--electric)" }}>Fort Mac</span>.
+          </SectionTitle>
+        </Reveal>
+        <Reveal delay={2}>
+          <Subtitle>
+            Every jar is hand-assembled by the team — gel base, scent compound, glass, label.
+            Local production means <span className="text-white font-bold">we control the quality</span> on every unit that ships.
+          </Subtitle>
+        </Reveal>
+      </div>
+
+      {/* Photo grid — placeholders for production-process shots */}
+      <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3">
+        {steps.map((s, i) => (
+          <Reveal key={s.tag} delay={(i + 1) as 1 | 2 | 3}>
+            <div className="card-base relative flex h-full flex-col overflow-hidden">
+              <div
+                className="absolute inset-x-0 top-0 z-[2] h-[3px]"
+                style={{ background: s.accent }}
+              />
+              <div
+                className="relative h-44 w-full"
+                style={{ background: "var(--violet-deep)" }}
+              >
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <span
+                    className="text-[9px] font-bold"
+                    style={{ color: s.accent, letterSpacing: "0.3em" }}
+                  >
+                    [ PHOTO ]
+                  </span>
+                </div>
+                <div
+                  aria-hidden
+                  className="absolute inset-x-0 bottom-0 h-1/2"
+                  style={{
+                    background:
+                      "linear-gradient(to bottom, transparent, #0c0c18 95%)",
+                  }}
+                />
+              </div>
+              <div className="flex flex-1 flex-col p-5">
+                <div
+                  className="text-[10px] font-bold"
+                  style={{ color: s.accent, letterSpacing: "0.3em" }}
+                >
+                  {s.tag}
+                </div>
+                <div className="mt-2 font-display text-[18px] font-bold leading-tight text-white">
+                  {s.title}
+                </div>
+                <p
+                  className="mt-2 text-[11.5px] leading-relaxed"
+                  style={{ color: "var(--pearl)" }}
+                >
+                  {s.desc}
+                </p>
+              </div>
+            </div>
+          </Reveal>
+        ))}
+      </div>
+
+      {/* Production stats strip */}
+      <Reveal delay={4}>
+        <div className="card-base mt-6 grid grid-cols-1 overflow-hidden md:grid-cols-3">
+          {stats.map((m, i) => (
+            <div
+              key={m.label}
+              className="relative p-5 pl-6"
+              style={{ borderLeft: i === 0 ? "none" : "1px solid var(--hair)" }}
+            >
+              <div
+                className="absolute inset-y-2 left-0 w-[3px]"
+                style={{ background: m.accent }}
+              />
+              <div className="font-display text-[22px] font-bold leading-none text-white">
+                {m.stat}
+              </div>
+              <div
+                className="mt-2 text-[10px] font-bold"
+                style={{ color: m.accent, letterSpacing: "0.3em" }}
+              >
+                {m.label}
+              </div>
+            </div>
+          ))}
+        </div>
+      </Reveal>
+
+      <SlideFooter num={13} total={18} next="#insight" />
+    </Slide>
+  );
+}
+
+/* ==============================================================
+   PROJECTED SALES (new · position 8 · eyebrow 07)
    ============================================================== */
 export function SlideProjections() {
   const cards = [
@@ -521,7 +641,7 @@ export function SlideProjections() {
         </div>
       </Reveal>
 
-      <SlideFooter num={8} total={17} next="#numbers" />
+      <SlideFooter num={8} total={18} next="#numbers" />
     </Slide>
   );
 }
@@ -840,7 +960,7 @@ export function SlideMarketing() {
         </div>
       </Reveal>
 
-      <SlideFooter num={11} total={17} next="#giving" />
+      <SlideFooter num={11} total={18} next="#giving" />
     </Slide>
   );
 }
@@ -1320,7 +1440,7 @@ export function SlideNumbers() {
         </div>
       </Reveal>
 
-      <SlideFooter num={9} total={17} next="#resilience" />
+      <SlideFooter num={9} total={18} next="#resilience" />
     </Slide>
   );
 }

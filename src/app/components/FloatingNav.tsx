@@ -4,8 +4,8 @@ import { useEffect, useRef, useState } from "react";
 
 const SLIDE_IDS = [
   "top",
-  "team",
   "problem",
+  "team",
   "what",
   "how",
   "wins",
@@ -15,6 +15,7 @@ const SLIDE_IDS = [
   "resilience",
   "marketing",
   "giving",
+  "production",
   "insight",
   "testimonials",
   "edge",
@@ -24,21 +25,22 @@ const SLIDE_IDS = [
 
 const LABELS: Record<string, string> = {
   top: "TITLE",
-  team: "TEAM",
   problem: "PROBLEM",
+  team: "TEAM",
   what: "WHAT WE DO",
   how: "HOW IT WORKS",
-  edge: "EDGE",
-  insight: "INSIGHT",
-  testimonials: "TESTIMONIALS",
-  traction: "TRACTION",
-  sales: "SALES STRATEGY",
   wins: "SALES",
+  traction: "TRACTION",
   projected: "PROJECTED SALES",
   numbers: "NUMBERS",
+  resilience: "RESILIENCE",
   marketing: "MARKETING",
   giving: "CHARITY",
-  resilience: "RESILIENCE",
+  production: "PRODUCTION",
+  insight: "INSIGHT",
+  testimonials: "TESTIMONIALS",
+  edge: "EDGE",
+  sales: "SALES STRATEGY",
   ask: "THE ASK",
 };
 
