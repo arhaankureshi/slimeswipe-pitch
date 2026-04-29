@@ -421,7 +421,14 @@ export function SlideProduction() {
       src: "/team/IMG_5538.jpg",
       objectPosition: "center 35%",
     },
-    { tag: "STEP 03", title: "Sealed + labeled", desc: "Quality-checked, sealed, and labeled before they ship.", accent: "var(--lilac)" },
+    {
+      tag: "STEP 03",
+      title: "Sealed + labeled",
+      desc: "Quality-checked, sealed, and labeled before they ship.",
+      accent: "var(--lilac)",
+      src: "/team/IMG_7856.jpg",
+      objectPosition: "center 30%",
+    },
   ];
 
   const stats = [
